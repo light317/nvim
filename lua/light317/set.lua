@@ -3,6 +3,8 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+vim.opt.title = true
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -14,7 +16,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
---vim.opt.undodir = os.getenv("HOME") .. "/.nvim-data/undodir"
+vim.opt.undodir =  "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\undo" --find a way to get home directory in winsows here
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
@@ -29,4 +31,3 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 --vim.opt.colorcolumn = "100"
-

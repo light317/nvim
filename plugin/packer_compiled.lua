@@ -74,15 +74,55 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-lua"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lua",
+    url = "https://github.com/hrsh7th/cmp-nvim-lua"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git-blame.nvim",
+    url = "https://github.com/f-person/git-blame.nvim"
   },
   harpoon = {
     loaded = true,
@@ -114,6 +154,26 @@ _G.packer_plugins = {
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neotest = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neotest",
+    url = "https://github.com/nvim-neotest/neotest"
+  },
+  ["neotest-dotnet"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neotest-dotnet",
+    url = "https://github.com/Issafalcon/neotest-dotnet"
+  },
+  ["neotest-plenary"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neotest-plenary",
+    url = "https://github.com/nvim-neotest/neotest-plenary"
+  },
+  ["neotest-rust"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neotest-rust",
+    url = "https://github.com/rouge8/neotest-rust"
+  },
   ["netrw.nvim"] = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\netrw.nvim",
@@ -123,6 +183,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lightbulb",
+    url = "https://github.com/kosayoda/nvim-lightbulb"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -134,15 +204,30 @@ _G.packer_plugins = {
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ufo"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ufo",
+    url = "https://github.com/kevinhwang91/nvim-ufo"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["oil.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\oil.nvim",
+    url = "https://github.com/stevearc/oil.nvim"
+  },
   ["omnisharp-vim"] = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\omnisharp-vim",
     url = "https://github.com/Omnisharp/omnisharp-vim"
+  },
+  osaka = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\osaka",
+    url = "https://github.com/craftzdog/solarized-osaka.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -153,6 +238,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["promise-async"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\promise-async",
+    url = "https://github.com/kevinhwang91/promise-async"
   },
   ["rose-pine"] = {
     config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
@@ -175,10 +265,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   }
 }
 
