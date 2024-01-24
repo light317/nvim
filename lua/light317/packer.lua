@@ -119,4 +119,6 @@ return require('packer').startup(function(use)
     use { 'rebelot/kanagawa.nvim', as = 'kanagawa' }
     use { 'craftzdog/solarized-osaka.nvim', as = 'osaka' }
     use { "catppuccin/nvim", as = "catppuccin" }
+    use { 'kepano/flexoki-neovim', as = 'flexoki' }
+    use { 'jacoborus/tender.vim', as = 'tender' }
 end)

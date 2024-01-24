@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  flexoki = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\flexoki",
+    url = "https://github.com/kepano/flexoki-neovim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
@@ -254,6 +259,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  tender = {
+    loaded = true,
+    path = "C:\\Users\\mouss\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tender",
+    url = "https://github.com/jacoborus/tender.vim"
   },
   ["trouble.nvim"] = {
     loaded = true,

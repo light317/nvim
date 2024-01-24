@@ -2,7 +2,7 @@
 require('illuminate').configure({
     -- providers: provider used to get references in the buffer, ordered by priority
     providers = {
-        -- 'lsp',
+        'lsp',
         'treesitter',
         'regex',
     },
@@ -16,7 +16,8 @@ require('illuminate').configure({
     filetypes_denylist = {
         'dirbuf',
         'dirvish',
-        'fugitive',
+        'fugitive'
+        -- 'netrw'
     },
     -- filetypes_allowlist: filetypes to illuminate, this is overridden by filetypes_denylist
     -- You must set filetypes_denylist = {} to override the defaults to allow filetypes_allowlist to take effect
