@@ -1,3 +1,5 @@
+require("os")
+
 local lsp_zero = require('lsp-zero')
 
 local cmp = require('cmp')
@@ -6,8 +8,12 @@ local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
-        -- `Enter` key to confirm completion
-        ['<CR>'] = cmp.mapping.confirm({ select = false }),
+        ['<Tab>'] = cmp.mapping.select_next_item(),
+        ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+        ['<CR>'] = cmp.mapping.confirm({
+            behavior = cmp.ConfirmBehavior.Replace,
+            select = true,
+        }),
 
         -- Ctrl+Space to trigger completion menu
         ['<C-Space>'] = cmp.mapping.complete(),
@@ -21,13 +27,10 @@ cmp.setup({
         ['<C-d>'] = cmp.mapping.scroll_docs(4),
     }),
     sources = cmp.config.sources({
-      { name = 'nvim_lsp' },
-      --{ name = 'vsnip' }, -- For vsnip users.
-       { name = 'luasnip' }, -- For luasnip users.
-      -- { name = 'ultisnips' }, -- For ultisnips users.
-      -- { name = 'snippy' }, -- For snippy users.
+        { name = 'nvim_lsp' },
+        { name = 'luasnip' }, -- For luasnip users.
     }, {
-      { name = 'buffer' },
+        { name = 'buffer' },
     })
 })
 
@@ -76,6 +79,17 @@ require('mason-lspconfig').setup({
         --     cmd = {"rustup", "run", "stable", "rust-analyzer"}
         --     })end
     },
+})
+
+
+-- c_sharp specific configs
+local pid = vim.fn.getpid()
+require("lspconfig").omnisharp.setup({
+    -- We rerouting the definition check through the extension, if the item is from an external source, it will decompile the source and take you there.
+    handlers = {
+        ["textDocument/definition"] = require('omnisharp_extended').handler,
+    },
+    cmd = { "C:\\Users\\mouss\\AppData\\Local\\omnisharp-vim\\omnisharp-roslyn\\omnisharp.exe", "--languageserver", "--hostPID", tostring(pid) }
 })
 
 lsp_zero.setup_servers({ 'lua_ls', 'angularls', 'tsserver' })

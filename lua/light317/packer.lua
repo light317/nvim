@@ -49,6 +49,7 @@ return require('packer').startup(function(use)
             -- LSP Support
             { 'neovim/nvim-lspconfig' },
             { 'Omnisharp/omnisharp-vim' },
+            { 'Hoffs/omnisharp-extended-lsp.nvim' },
 
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },
