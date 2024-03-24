@@ -50,6 +50,19 @@ lsp_zero.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>rr", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+
+
+    if client.server_capabilities.signatureHelpProvider then
+        require('lsp-overloads').setup(client, {
+            keymaps = {
+                next_signature = "<A-j>",
+                previous_signature = "<A-k>",
+                next_parameter = "<A-l>",
+                previous_parameter = "<A-h>",
+                close_signature = "<A-s>"
+            },
+        })
+    end
 end)
 
 lsp_zero.set_sign_icons({

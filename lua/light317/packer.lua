@@ -71,6 +71,7 @@ return require('packer').startup(function(use)
     use {
         "nvim-neotest/neotest",
         requires = {
+            "nvim-neotest/nvim-nio",
             "nvim-lua/plenary.nvim",
             "antoinemadec/FixCursorHold.nvim",
             "nvim-treesitter/nvim-treesitter",
@@ -98,12 +99,13 @@ return require('packer').startup(function(use)
     }
 
     use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
+    use { 'Issafalcon/lsp-overloads.nvim' }
 
     --use "SirVer/ultisnips"
     --    use { 'neoclide/coc.nvim', branch = 'release' }
 
     -- File Manager
-    use "stevearc/oil.nvim"    --this is great, it needs a little configuration before use.
+    use "stevearc/oil.nvim" --this is great, it needs a little configuration before use.
 
     -- Extra
     --use "github/copilot.vim" -- can't use, it needs a subscription.

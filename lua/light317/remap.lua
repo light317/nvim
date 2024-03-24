@@ -1,6 +1,10 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+vim.keymap.set("n", "<C-h>", "<cmd>wincmd h<CR>")
+vim.keymap.set("n", "<C-j>", "<cmd>wincmd j<CR>")
+vim.keymap.set("n", "<C-k>", "<cmd>wincmd k<CR>")
+vim.keymap.set("n", "<C-l>", "<cmd>wincmd l<CR>")
 
 vim.keymap.set("n", "<leader>-", vim.cmd.bprev)
 vim.keymap.set("n", "<leader>=", vim.cmd.bnext)
@@ -25,6 +29,11 @@ vim.keymap.set("n", "<leader>y", "\"+y")  -- these 3 will allow us to copy thing
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
+vim.keymap.set("n", "<leader>yy", "Vyp") -- Duplicate the line
+
+vim.keymap.set("n", "<leader>vv", "ggVG") -- Selects the whole file in visual mode
+
+vim.keymap.set("n", "<leader>rw", "viw\"_dP") -- Replaces the word under the cursor with whatever that was yanked
 
 vim.keymap.set("n", "<leader>fv", "<cmd>Lexplore<CR>")
 
